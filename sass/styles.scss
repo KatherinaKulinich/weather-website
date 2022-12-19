@@ -1,0 +1,13 @@
+@use './variables' as *;
+@use './mixins' as *;
+
+@import './normalize';
+@import './fonts';
+@import './settings';
+@import './container';
+
+@import './blocks/main-screen';
+@import './blocks/information';
+@import './blocks/location-form'
+
+

@@ -6,117 +6,130 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="weather, weather app, weather website, weather forecast. location, region">
     <meta name="description" content="You can get actual information about the weather in tour region or in another locations">
+    <link rel="stylesheet" href="./css/styles.min.css">
     <title>Weather app</title>
 </head>
 <body class="body">
-    <div class="container">
-        <section class="main-screen">
-            <h1 class="main-screen__title">
-                Weather app
-            </h1>
-            <div class="main-screen__forecast">
-                <p class="main-screen__temperature" id="temperature">NA</p>
-                <div class="main-screen__location">
-                    <p class="main-screen__region" id="location">NA</p>
-                    <div class="main-screen__date">
-                        <p class="main-screen__time" id="time">NA</p>
-                        <p class="main-screen__day" id="date">NA</p>
+    <div class="wrapper">
+        <div class=" container">
+            <section class="main-screen">
+                <h1 class="main-screen__title">
+                    Weather app
+                </h1>
+                <div class="main-screen__forecast">
+                    <p class="main-screen__temperature" id="temperature">
+                        12&deg;
+                    </p>
+                    <div class="main-screen__location">
+                        <p class="main-screen__region" id="location">
+                            London
+                        </p>
+                        <div class="main-screen__date">
+                            <p class="main-screen__text" id="time">
+                                12:34
+                            </p>
+                            <p class="main-screen__text" id="date">
+                                Sat 12, April
+                            </p>
+                        </div>
+                    </div>
+                    <div class="main-screen__forecast-icon">
+                        <img 
+                            src="#" 
+                            alt="" 
+                            class="main-screen__icon" 
+                            id="forecast-icon"
+                        >
                     </div>
                 </div>
-                <div class="main-screen__forecast-icon">
-                    <img 
-                        src="#" 
-                        alt="" 
-                        class="main-screen__icon" 
-                        id="forecast-icon"
+            </section>
+            <div class="container__card">
+                <section class="information">
+                    <form 
+                        action="#" 
+                        method="get" 
+                        name="location" 
+                        class="location-form"
                     >
-                </div>
+                        <input 
+                            type="text" 
+                            class="location-form__input" 
+                            name="userLocation" 
+                            id="userLocation"
+                        >
+                        <label 
+                            for="userLocation" 
+                            class="location-form__label"
+                        >
+                            enter your location
+                        </label>
+                        <button 
+                            type="submit" 
+                            name="button" 
+                            id="buttonLocation" 
+                            class="location-form__button"
+                        >
+                            get forecast
+                        </button>
+                    </form>
+                    <div class="information__details">
+                        <h2 class="information__title">
+                            weather details
+                        </h2>
+                        <div class="information__details-list">
+                            <div class="information__item">
+                                <p class="information__item-text">
+                                    Temperature
+                                </p>
+                                <p class="information__item-value" id="temperatureValue">
+                                    NA
+                                </p>
+                            </div>
+                            <div class="information__item">
+                                <p class="information__item-text">
+                                    Pressure
+                                </p>
+                                <p class="information__item-value" id="pressureValue">
+                                    NA
+                                </p>
+                            </div>
+                            <div class="information__item">
+                                <p class="information__item-text">
+                                    Description
+                                </p>
+                                <p class="information__item-value" id="descriptionValue">
+                                    NA
+                                </p>
+                            </div>
+                            <div class="information__item">
+                                <p class="information__item-text">
+                                    Wind speed
+                                </p>
+                                <p class="information__item-value" id="windSpeedValue">
+                                    NA
+                                </p>
+                            </div>
+                            <div class="information__item">
+                                <p class="information__item-text">
+                                    Wind direction
+                                </p>
+                                <p class="information__item-value" id="windDirectionValue">
+                                    NA
+                                </p>
+                            </div>
+                            <div class="information__item">
+                                <p class="information__item-text">
+                                    Humidity
+                                </p>
+                                <p class="information__item-value" id="humidityValue">
+                                    NA
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
             </div>
-        </section>
-        <section class="information">
-            <form 
-                action="#" 
-                method="get" 
-                name="location" 
-                class="location-form"
-            >
-                <input 
-                    type="text" 
-                    class="location-form__input" 
-                    name="userLocation" 
-                    id="userLocation"
-                >
-                <label 
-                    for="userLocation" 
-                    class="location-form__label"
-                >
-                    enter your location
-                </label>
-                <button 
-                    type="submit" 
-                    name="button" 
-                    id="buttonLocation" 
-                    class="location-form__button"
-                >
-                    get weather forecast
-                </button>
-            </form>
-            <div class="information__details">
-                <h2 class="information__title">
-                    weather details
-                </h2>
-                <div class="information__details-list">
-                    <div class="information__item">
-                        <p class="information__item-text">
-                            Temperature
-                        </p>
-                        <p class="information__item-value" id="temperatureValue">
-                            NA
-                        </p>
-                    </div>
-                    <div class="information__item">
-                        <p class="information__item-text">
-                            Pressure
-                        </p>
-                        <p class="information__item-value" id="pressureValue">
-                            NA
-                        </p>
-                    </div>
-                    <div class="information__item">
-                        <p class="information__item-text">
-                            Description
-                        </p>
-                        <p class="information__item-value" id="descriptionValue">
-                            NA
-                        </p>
-                    </div>
-                    <div class="information__item">
-                        <p class="information__item-text">
-                            Wind speed
-                        </p>
-                        <p class="information__item-value" id="windSpeedValue">
-                            NA
-                        </p>
-                    </div>
-                    <div class="information__item">
-                        <p class="information__item-text">
-                            Wind direction
-                        </p>
-                        <p class="information__item-value" id="windDirectionValue">
-                            NA
-                        </p>
-                    </div>
-                    <div class="information__item">
-                        <p class="information__item-text">
-                            Humidity
-                        </p>
-                        <p class="information__item-value" id="humidityValue">
-                            NA
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
+       </div>
     </div>
 </body>
 </html>

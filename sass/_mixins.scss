@@ -1,0 +1,35 @@
+@use './variables' as *;
+
+@mixin items-text($color) {
+    font-family: 'DM Sans';
+    font-size: 20px;
+    line-height: 24px;
+    color: $color;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+@mixin regular-text($fs, $lh, $color) {
+    font-family: 'Oswald';
+    text-transform: uppercase;
+    font-size: $fs;
+    line-height: $lh;
+    color: $color;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+@mixin font($fs, $fh, $color) {
+    font-family: 'DM Sans';
+    font-size: $fs;
+    line-height: $fh;
+    color: $color;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+@mixin column($gap) {
+    display: flex;
+    flex-direction: column;
+    gap: $gap;
+}

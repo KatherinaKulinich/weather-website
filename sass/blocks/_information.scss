@@ -1,0 +1,60 @@
+@use '../variables' as *;
+@use '../mixins' as *;
+
+.information {
+    padding: 30px 15px;
+    width: 100%;
+    height: 100%;
+    background: rgba(78, 102, 116, .2);
+    @include column(70px);
+    
+
+    &__details {
+        @include column(40px);
+    }
+
+    &__title {
+        @include regular-text(24px, 27px, $main-text-color);
+    }
+
+    &__details-list {
+        @include column(20px);
+    }
+
+    &__item {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__item-text {
+        @include items-text($main-text-color);
+    }
+
+    &__item-value {
+        @include items-text(#FFFFFF);
+    }
+}
+
+
+@media (min-width: 768px) {
+    .information {
+        padding: 40px;
+
+        &__title {
+            @include regular-text(30px, 32px, $main-text-color);
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    .information {
+        padding: 50px;
+
+        &__item-text, 
+        &__item-value {
+            font-size: 25px;
+            line-height: 30px;
+        }
+    }
+}
+
