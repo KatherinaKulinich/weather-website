@@ -23,7 +23,7 @@ function getForecastData(api) {
                 const iconItem = document.createElement('div');
                 iconItem.classList.add('main-screen__forecast-icon');
                 const iconImg = document.createElement('img');
-                iconImg.setAttribute('src', `http://openweathermap.org/img/wn/${element.icon}@2x.png`);
+                iconImg.setAttribute('src', `https://openweathermap.org/img/wn/${element.icon}@2x.png`);
                 iconImg.setAttribute('alt', 'weather-icon');
                 iconImg.classList.add('main-screen__icon');
                 iconItem.append(iconImg);
@@ -88,7 +88,7 @@ form.addEventListener('submit', (event) => {
     let value = form.elements["userLocation"].value;
     let validValue = value.replaceAll(/[^a-zа-яіё]/gi, '');
 
-    const api = `http://api.openweathermap.org/data/2.5/weather?q=${validValue}&ç=metric&APPID=${key}&units=metric`;
+    const api = `https://api.openweathermap.org/data/2.5/weather?q=${validValue}&ç=metric&APPID=${key}&units=metric`;
     getForecastData(api);
 
     form.elements["userLocation"].value = '';
