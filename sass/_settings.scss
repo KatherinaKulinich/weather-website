@@ -4,10 +4,11 @@
 
 body {
     margin: 0;
-    background-image: url('../images/default.jpg');
+    background: linear-gradient(338deg, #0d4982 0%, #92c3e2 80%);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    transition: background-image 1s ease-in;
 }
 
 

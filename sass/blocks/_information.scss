@@ -17,22 +17,33 @@
         @include regular-text(24px, 27px, $main-text-color);
     }
 
+    &__sub-title {
+        @include regular-text(20px, 24px, $main-text-color);
+    }
+
     &__details-list {
-        @include column(20px);
+        @include column(30px);
     }
 
     &__item {
         display: flex;
         justify-content: space-between;
+        align-items: center;
+    }
+
+    &__field,
+    &__desc-list {
+        @include column(15px);
     }
 
     &__item-text {
         @include items-text($main-text-color);
     }
 
-    &__item-value {
+    &__item-value,
+    &__error {
         @include items-text(#FFFFFF);
-    }
+    }  
 }
 
 
@@ -49,12 +60,6 @@
 @media (min-width: 1024px) {
     .information {
         padding: 50px;
-
-        &__item-text, 
-        &__item-value {
-            font-size: 25px;
-            line-height: 30px;
-        }
     }
 }
 

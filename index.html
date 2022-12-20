@@ -17,30 +17,20 @@
                     Weather app
                 </h1>
                 <div class="main-screen__forecast">
-                    <p class="main-screen__temperature" id="temperature">
-                        
-                    </p>
+                    <p class="main-screen__temperature" id="temperature"></p>
                     <div class="main-screen__location">
-                        <p class="main-screen__region" id="location">
-                            
-                        </p>
+                        <p class="main-screen__region" id="location"></p>
                         <div class="main-screen__date">
-                            <p class="main-screen__text" id="time">
-                                
-                            </p>
-                            <p class="main-screen__text" id="date">
-                                
-                            </p>
+                            <p class="main-screen__text" id="time"></p>
+                            <p class="main-screen__text" id="date"></p>
                         </div>
                     </div>
-                    <div class="main-screen__forecast-icon">
-                        <img 
-                            src="#" 
-                            alt="" 
-                            class="main-screen__icon" 
-                            id="forecast-icon"
-                        >
-                    </div>
+                    <div class="main-screen__icons-box"></div>
+                </div>
+                <div class="main-screen__loader">
+                    <span class="main-screen__loader-dot"></span>
+                    <span class="main-screen__loader-dot"></span>
+                    <span class="main-screen__loader-dot"></span>
                 </div>
             </section>
             <div class="container__card">
@@ -71,22 +61,68 @@
                         >
                             get forecast
                         </button>
+                        
                     </form>
+                    <p class="information__error"></p>
                     <div class="information__details">
                         <h2 class="information__title">
                             weather details
                         </h2>
                         <div class="information__details-list">
-                            <div class="information__item">
-                                <p class="information__item-text">
-                                    Temperature
-                                </p>
-                                <p class="information__item-value" id="temperatureValue">
-                                    NA
-                                </p>
+                            <h3 class="information__sub-title">
+                                Temperature:
+                            </h3>
+                            <div class="information__field">
+                                
+                                <div class="information__item">
+                                    <p class="information__item-text">
+                                        Current  
+                                    </p>
+                                    <p class="information__item-value" id="temperatureValue">
+                                        NA
+                                    </p>
+                                </div>
+                                <div class="information__item">
+                                    <p class="information__item-text">
+                                        Maximum 
+                                    </p>
+                                    <p class="information__item-value" id="temperatureMaxValue">
+                                        NA
+                                    </p>
+                                </div>
+                                <div class="information__item">
+                                    <p class="information__item-text">
+                                        Minimum 
+                                    </p>
+                                    <p class="information__item-value" id="temperatureMinValue">
+                                        NA
+                                    </p>
+                                </div>
+                            </div>
+                            <h3 class="information__sub-title">
+                                Wind:
+                            </h3>
+                            <div class="information__field">
+                                
+                                <div class="information__item">
+                                    <p class="information__item-text">
+                                        Speed
+                                    </p>
+                                    <p class="information__item-value" id="windSpeedValue">
+                                        NA
+                                    </p>
+                                </div>
+                                <div class="information__item">
+                                    <p class="information__item-text">
+                                        Direction
+                                    </p>
+                                    <p class="information__item-value" id="windDirectionValue">
+                                        NA
+                                    </p>
+                                </div>
                             </div>
                             <div class="information__item">
-                                <p class="information__item-text">
+                                <p class="information__sub-title">
                                     Pressure
                                 </p>
                                 <p class="information__item-value" id="pressureValue">
@@ -94,36 +130,18 @@
                                 </p>
                             </div>
                             <div class="information__item">
-                                <p class="information__item-text">
-                                    Description
-                                </p>
-                                <p class="information__item-value" id="descriptionValue">
-                                    NA
-                                </p>
-                            </div>
-                            <div class="information__item">
-                                <p class="information__item-text">
-                                    Wind speed
-                                </p>
-                                <p class="information__item-value" id="windSpeedValue">
-                                    NA
-                                </p>
-                            </div>
-                            <div class="information__item">
-                                <p class="information__item-text">
-                                    Wind direction
-                                </p>
-                                <p class="information__item-value" id="windDirectionValue">
-                                    NA
-                                </p>
-                            </div>
-                            <div class="information__item">
-                                <p class="information__item-text">
+                                <p class="information__sub-title">
                                     Humidity
                                 </p>
                                 <p class="information__item-value" id="humidityValue">
                                     NA
                                 </p>
+                            </div>
+                            <div class="information__item">
+                                <p class="information__sub-title">
+                                    Description
+                                </p>
+                                <div class="information__desc-list"></div>
                             </div>
                         </div>
                     </div>
@@ -131,5 +149,9 @@
             </div>
        </div>
     </div>
+
+    <script src="./js/data.js"></script>
+    <script src="./js/index.js"></script>
+    <script src="./js/start-screen.js"></script>
 </body>
 </html>
