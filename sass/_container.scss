@@ -1,6 +1,5 @@
 .container {
     min-height: 100vh;
-    max-height: 100vh;
     width: 100%;
     
     display: grid;
@@ -12,6 +11,11 @@
     }
 }
 
+@media (min-width: 768px) {
+    .container {
+        max-height: 100vh;
+    }
+}
 
 @media (min-width: 1024px) {
     .container {
