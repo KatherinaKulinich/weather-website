@@ -2,22 +2,22 @@
 
 function loadInitialBackground(data, elem) {
     if (data === 11 || data <= 1) {
-        elem.style.backgroundImage= "url('../images/winter.jpg')";
+        elem.style.backgroundImage= "url('./images/winter.jpg')";
         return;
     }
 
     if (data >= 2 && data <= 4) {
-        elem.style.backgroundImage= "url('../images/spring.jpg')";
+        elem.style.backgroundImage= "url('./images/spring.jpg')";
         return;
     }
 
     if (data >= 5 && data <= 7) {
-        elem.style.backgroundImage= "url('../images/summer.jpg')";
+        elem.style.backgroundImage= "url('./images/summer.jpg')";
         return;
     }
 
     if (data >= 8 && data <= 10) {
-        elem.style.backgroundImage= "url('../images/fall.jpg')";
+        elem.style.backgroundImage= "url('./images/fall.jpg')";
         return;
     }
 }

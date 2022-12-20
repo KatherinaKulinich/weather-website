@@ -38,27 +38,27 @@ function getForecastData(api) {
 
 
             if (/^2/.test(element.id)) {
-                body.style.backgroundImage = "url('../images/storm.jpg')";
+                body.style.backgroundImage = "url('./images/storm.jpg')";
                 return;
             }
             if (/^(3|5)/.test(element.id)) {
-                body.style.backgroundImage = "url('../images/rain.jpg')";
+                body.style.backgroundImage = "url('./images/rain.jpg')";
                 return;
             }
             if (/^6/.test(element.id)) {
-                body.style.backgroundImage = "url('../images/snow.jpg')";
+                body.style.backgroundImage = "url('./images/snow.jpg')";
                 return;
             }
             if (/^7/.test(element.id)) {
-                body.style.backgroundImage = "url('../images/foggy.jpg')";
+                body.style.backgroundImage = "url('./images/foggy.jpg')";
                 return;
             }
             if (/800/.test(element.id)) {
-                body.style.backgroundImage = "url('../images/sun.jpg')";
+                body.style.backgroundImage = "url('./images/sun.jpg')";
                 return;
             }
             if (/^8/.test(element.id)) {
-                body.style.backgroundImage = "url('../images/cloudy.jpg')";
+                body.style.backgroundImage = "url('./images/cloudy.jpg')";
                 return;
             }
        });
