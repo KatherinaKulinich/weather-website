@@ -86,7 +86,7 @@ form.addEventListener('submit', (event) => {
     getDate(data, time, date);
 
     let value = form.elements["userLocation"].value;
-    let validValue = value.replaceAll(/[^a-zа-яіё]/gi, '');
+    let validValue = value.replaceAll(/[^-a-zа-яіё]/gi, '');
 
     const api = `https://api.openweathermap.org/data/2.5/weather?q=${validValue}&ç=metric&APPID=${key}&units=metric`;
     getForecastData(api);
