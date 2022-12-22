@@ -13,7 +13,7 @@
         outline: none;
         border-bottom: 1px solid #FFFFFF;
         background-color: transparent;
-        color: #FFFFFF;
+        color: $main-text-color;
         caret-color: #10618F ;
     }
 
@@ -24,11 +24,13 @@
         transform: translate(10px, 10px);
         transform-origin: left;
         transition: transform 0.25s;
-        @include regular-text(16px, 19px, $main-text-color);
+        @include regular-text(12px, 15px, $main-text-color);
+        max-width: 180px;
     }
 
     &__input:focus+ .location-form__label {
-        transform: translate(0, -20px) scale(0.8);;
+        transform: translate(0, -20px) scale(0.8);
+        color: #FFFFFF;
     }
 
     &__button {

@@ -40,9 +40,9 @@
     }
 
     &__region {
-        @include font(40px, 45px, #FFFFFF);
+        @include font(30px, 45px, #FFFFFF);
         text-transform: uppercase;
-        max-width: 200px;
+        align-self: flex-start;
     }
 
     &__date {
@@ -119,7 +119,7 @@
         }
 
         &__temperature {
-            @include font(80px, 90px, #FFFFFF);
+            @include font(64px, 70px, #FFFFFF);
         }
 
         &__location {
@@ -131,17 +131,18 @@
         }
 
         &__region {
-            @include font(58px, 66px, #FFFFFF);
+            @include font(40px, 44px, #FFFFFF);
             max-width: 350px;
         }
 
         &__forecast {
-            row-gap: 20px;
-            column-gap: 40px;
+            row-gap: 15px;
+            column-gap: 20px;
         }
 
         &__icons-box {
             gap: 30px;
+            justify-content: flex-end;
         }
 
         &__loader {
@@ -182,6 +183,11 @@
         &__location {
             grid-column: 1/2;
             grid-row: 2/3;
+        }
+
+        &__region {
+            font-size: 46px;
+            line-height: 50px;
         }
 
         &__text {
@@ -225,7 +231,8 @@
         }
 
         &__region {
-            @include font(70px, 76px, #FFFFFF);
+            font-size: 56px;
+            line-height: 60px;
             max-width: 450px;
         }
 
