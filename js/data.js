@@ -30,13 +30,15 @@ loader.style.display = "none";
 
 
 function showErrorMessage() {
+    errorMessage.style.display = "block";
+    errorMessage.innerHTML = `Error. Try again!`;
     setTimeout(() => {
         errorMessage.style.display = "none"
     }, 4000)
 }
 
 
-function getDate(data, elemTime, elemDate) {
+function getCurrentDate(data, elemTime, elemDate) {
     const hours = data.getHours();
     const min = data.getMinutes();
     const weekDay = data.getDay();
@@ -47,4 +49,14 @@ function getDate(data, elemTime, elemDate) {
     elemTime.innerHTML = currentTime;
     elemDate.innerHTML = currentDate;
 }
+
+
+function showLoader() {
+    loader.style.display = "flex";
+}
+
+function hideLoader() {
+    loader.style.display = "none";
+}
+
 
