@@ -7,6 +7,7 @@
     height: 100%;
     background: rgba(78, 102, 116, .2);
     @include column(70px);
+    position: relative;
     
 
     &__details {
@@ -40,10 +41,20 @@
         @include items-text($main-text-color);
     }
 
-    &__item-value,
-    &__error {
+    &__item-value {
         @include items-text(#FFFFFF);
     }  
+
+    &__error {
+        position: absolute;
+        top: 80px;
+        font-family: 'Oswald';
+        font-size: 16px;
+        line-height: 19px;
+        color: #74090B;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
 }
 
 
@@ -54,12 +65,20 @@
         &__title {
             @include regular-text(30px, 32px, $main-text-color);
         }
+
+        &__error {
+            top: 90px;
+        }
     }
 }
 
 @media (min-width: 1024px) {
     .information {
         padding: 50px;
+
+        &__error {
+            top: 100px;
+        }
     }
 }
 
