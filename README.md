@@ -10,6 +10,22 @@
 <p>The application provides essential weather details like temperature, humidity, wind speed, and precipitation, making it easy to plan your day effectively</p>
 <hr/>
 
+<h3>⚙️ Tools and technologies</h3>
+<span>
+  <img width='60' src="https://user-images.githubusercontent.com/25181517/192158954-f88b5814-d510-4564-b285-dff7d6400dad.png"/>
+</span>
+<span>
+  <img width='60' src="https://user-images.githubusercontent.com/25181517/192158956-48192682-23d5-4bfc-9dfb-6511ade346bc.png"/>
+</span>
+<span>
+  <img width='60' src="https://user-images.githubusercontent.com/25181517/117447155-6a868a00-af3d-11eb-9cfe-245df15c9f3f.png"/>
+</span>
+<span>
+  <img width='60' src="https://github.com/marwin1991/profile-technology-icons/assets/136815194/c49c6dbd-992a-4f14-9cf4-ff40cb5344ed"/>
+</span>
+
+<hr/>
+
 <h3>📲 About app</h3>
 
 <h4>🌎 Local Weather </h5>
@@ -47,21 +63,7 @@
 
 <hr/>
 
-<h3>⚙️ Tools and technologies</h3>
-<span>
-  <img width='60' src="https://user-images.githubusercontent.com/25181517/192158954-f88b5814-d510-4564-b285-dff7d6400dad.png"/>
-</span>
-<span>
-  <img width='60' src="https://user-images.githubusercontent.com/25181517/192158956-48192682-23d5-4bfc-9dfb-6511ade346bc.png"/>
-</span>
-<span>
-  <img width='60' src="https://user-images.githubusercontent.com/25181517/117447155-6a868a00-af3d-11eb-9cfe-245df15c9f3f.png"/>
-</span>
-<span>
-  <img width='60' src="https://github.com/marwin1991/profile-technology-icons/assets/136815194/c49c6dbd-992a-4f14-9cf4-ff40cb5344ed"/>
-</span>
 
-<hr/>
 
 
 <h3>👇🏼 Demo</h3>
