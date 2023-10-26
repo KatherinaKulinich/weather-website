@@ -67,7 +67,7 @@
 
 
 <h3>👇🏼 Demo</h3>
-<p>https://katherinakulinich.github.io/weather_app/</p>
+<p>https://katherinakulinich.github.io/weather_app--js/</p>
 
 
 
