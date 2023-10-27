@@ -55,9 +55,11 @@
 </div>
 <div align='center'>
   <img width="300" height='200' src="https://github.com/KatherinaKulinich/weather_app--js/assets/109860560/83b08b9b-e94b-4850-8c0f-dd6025b40430">
+  <img width="300" height='200' src="https://github.com/KatherinaKulinich/weather_app--js/assets/109860560/5c93f195-538b-4ba4-a7ce-473c219b4f6c">
 </div>
 <h4>🌎 Highly Precise Weather Forecast </h5>
 <p>The app uses the<a href='https://openweathermap.org/api/one-call-3'>OpenWeatherAPI</a>  to deliver you the weather information with unrivaled accuracy and precision.</p>
+
 
 
 
